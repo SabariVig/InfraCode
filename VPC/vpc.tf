@@ -3,6 +3,7 @@ resource "aws_vpc" "TF-VPC" {
   tags = {
     name = "MYVPC"
   }
+  enable_dns_hostnames = true 
 }
 
 

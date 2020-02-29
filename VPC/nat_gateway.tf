@@ -7,8 +7,8 @@
 #   }
 # }
 
-resource "aws_eip" "Nat-Eip" {
-  vpc   = true
-  count = length(var.availability_zone)
-}
+# resource "aws_eip" "Nat-Eip" {
+#   vpc   = true
+#   count = length(var.availability_zone)
+# }
 
