@@ -11,6 +11,7 @@ resource "aws_db_instance" "mysql" {
   vpc_security_group_ids      = [aws_security_group.db_sg.id]
   db_subnet_group_name        = aws_db_subnet_group.db_subnet.id
   publicly_accessible         = true
+  skip_final_snapshot         = true
 
   tags = {
     name = "MYSql DB"
