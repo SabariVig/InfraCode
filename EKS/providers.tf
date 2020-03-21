@@ -4,10 +4,10 @@ provider "aws" {
 
 
 terraform {
-    backend "s3"{
-        region = "ap-southeast-2"
-        bucket="hawk-tf-state"
-        key = "eks/key"
-        encrypt = true
-    }
+  backend "s3" {
+    region  = "ap-southeast-2"
+    bucket  = "hawk-tf-state"
+    key     = "eks/key"
+    encrypt = true
+  }
 }

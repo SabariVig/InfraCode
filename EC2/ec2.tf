@@ -24,7 +24,7 @@ resource "aws_security_group" "SG1" {
 
 resource "aws_instance" "MYEC2" {
 
-  ami           = "ami-02a599eb01e3b3c5b"
+  ami           = "ami-0d0eaed20348a3389"
   instance_type = "t2.micro"
   key_name      = "temp"
   tags = {
@@ -33,12 +33,4 @@ resource "aws_instance" "MYEC2" {
   }
   security_groups = [aws_security_group.SG1.name]
 }
-
-
-resource "aws_eip" "MyElasticIP" {
-
-  instance = aws_instance.MYEC2.id
-
-}
-
 
