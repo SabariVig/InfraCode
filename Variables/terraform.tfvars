@@ -1,3 +1,4 @@
-region        = "us-west-1"
+region        = "eu-central-1"
 instance_type = "t2.large"
+ami           = "ami-02f9ea74050d6f812"
 

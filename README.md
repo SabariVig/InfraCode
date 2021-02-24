@@ -5,8 +5,8 @@ Infrastructure As Code Using Terrafrom.
 
 ### Concepts
 + [Variables](./Variables)
-+ Loops 
-+ Output 
++ [Output](./Output) 
++ [DataSource](./Datasource)
 + Modules
 
 ### Provider Specific 
